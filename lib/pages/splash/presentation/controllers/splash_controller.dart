@@ -17,11 +17,10 @@ class SplashController extends GetxController {
     super.onReady();
 
     Future.delayed(Duration(seconds: 3), () {
-      if(nameController.name!= "") {
+
         Get.offAndToNamed("/name");
-      }else{
-        Get.offAndToNamed("/home");
-      }});
+
+      });
   }
   }
 

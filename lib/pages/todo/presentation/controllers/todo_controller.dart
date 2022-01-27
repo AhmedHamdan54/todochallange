@@ -10,7 +10,7 @@ class TodoController extends GetxController {
   String name="";
 
   void readName(){
-    name = GetStorage().read<String>('name')!;
+      name = GetStorage().read<String>('name')!;
   }
   @override
   void onInit() {
